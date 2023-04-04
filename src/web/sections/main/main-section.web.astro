@@ -1,7 +1,7 @@
 ---
 import type { MainSection } from '@/types/sections/main-section.types';
 import Description from '@/web/components/description.astro';
-import DownloadButton from '@/web/components/download-button.astro';
+// import DownloadButton from '@/web/components/download-button.astro';
 import LinkButton from '@/web/components/link-button.astro';
 import Photo from '@/components/photo.astro';
 import SectionCard from '@/web/components/section-card.astro';
@@ -11,7 +11,7 @@ import LabelledValue from '@/web/components/labelled-value.astro';
 
 export interface Props extends MainSection {}
 
-const { action, config, description, details, fullName, image, links, role, tags } = Astro.props;
+const { config, description, details, fullName, image, links, role, tags } = Astro.props;
 ---
 
 <SectionCard {...config} hideTitle>
@@ -24,7 +24,7 @@ const { action, config, description, details, fullName, image, links, role, tags
         height={320}
         class="h-24 w-24 max-w-none rounded-lg sm:h-36 sm:w-36 md:h-52 md:w-52"
       />
-      <DownloadButton {...action} />
+      <!-- <DownloadButton {...action} /> -->
     </div>
     <div class="flex w-full flex-col gap-5">
       <div class="flex w-full flex-col justify-between gap-2 sm:flex-row">
