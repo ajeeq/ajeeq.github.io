@@ -17,7 +17,7 @@ import {
   python,
   sass,
   tailwindCss,
-  vercel
+  vercel,
 } from '../helpers/skills';
 import { mongoDb } from '../helpers/skills';
 

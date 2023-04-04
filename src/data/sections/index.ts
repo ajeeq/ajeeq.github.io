@@ -11,7 +11,7 @@ export const sections = {
   skills: skillsData,
   experience: experienceData,
   portfolio: portfolioData,
-  education: educationData
+  education: educationData,
 } as const satisfies ReadonlyDeep<Sections>;
 
 export default sections;

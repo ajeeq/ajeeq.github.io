@@ -34,7 +34,7 @@ const mainSectionData = {
     url: '/cv.pdf',
     downloadedFileName: 'CV-Mark_Freeman.pdf',
   },
-  links: [github({ url: 'https://github.com/ajeeq' }), linkedin({ url: 'https://www.linkedin.com/in/hazfarjohari/' }),],
+  links: [github({ url: 'https://github.com/ajeeq' }), linkedin({ url: 'https://www.linkedin.com/in/hazfarjohari/' })],
 } as const satisfies ReadonlyDeep<MainSection>;
 
 export default mainSectionData;

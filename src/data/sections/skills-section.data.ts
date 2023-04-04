@@ -24,7 +24,7 @@ import {
   sql,
   tailwindCss,
   terminal,
-  vscode
+  vscode,
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -42,10 +42,10 @@ const skillsSectionData = {
           level: 4,
           description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
         }),
-        java({level: 4}),
-        php({level: 4}),
-        sql({level: 4}),
-        python({level: 2}),
+        java({ level: 4 }),
+        php({ level: 4 }),
+        sql({ level: 4 }),
+        python({ level: 2 }),
       ],
     },
     {
@@ -63,7 +63,7 @@ const skillsSectionData = {
           level: 4,
           description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
         }),
-        terminal({name: 'Windows CMD/Linux Terminal', level:4})
+        terminal({ name: 'Windows CMD/Linux Terminal', level: 4 }),
       ],
     },
     {
@@ -105,14 +105,14 @@ const skillsSectionData = {
         mongoDb({ level: 2 }),
         postgreSql({ level: 2 }),
         apolloGraphql({ level: 2 }),
-        flutter({name: 'Dart/Flutter', level: 4}),
+        flutter({ name: 'Dart/Flutter', level: 4 }),
       ],
     },
     {
       title: 'I speak',
       skills: [
         { icon: 'circle-flags:my', name: 'Malay - fluent' },
-        { icon: 'circle-flags:us', name: 'English - intermediate' }
+        { icon: 'circle-flags:us', name: 'English - intermediate' },
       ],
     },
   ],

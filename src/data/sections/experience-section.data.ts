@@ -52,7 +52,7 @@ const experienceSectionData = {
       `,
       tagsList: {
         title: 'Skills',
-        tags: [wordpress(), php() ],
+        tags: [wordpress(), php()],
       },
       links: [twitter({ url: '#' }), github({ url: '#' })],
     },
