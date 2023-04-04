@@ -23,7 +23,7 @@ const educationSectionData = {
       institution: 'Universiti Teknologi MARA',
       image: import('@/assets/logos/uitm-logo.png'),
       dates: [new Date('2017.6'), new Date('2020.07')],
-      description: "Diploma.",
+      description: 'Diploma.',
       links: [website({ url: '#' })],
     },
   ],
