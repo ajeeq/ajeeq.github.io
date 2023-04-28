@@ -105,7 +105,11 @@ const portfolioSectionData = {
         title: 'Technologies',
         tags: [flutter()],
       },
-      links: [website({ url: '#' }), github({ url: '#' })],
+      links: [
+        website({ name: 'Privacy Policy', url: '/uitmscheduler/uitmschedprivpol', icon: 'fa6-solid:lock' }), 
+        website({ name: 'Terms and Conditions', url: '/uitmscheduler/uitmschedtnc', icon: 'fa6-solid:file-lines' }), 
+        github({ url: 'https://github.com/ajeeq/uitmscheduler' })
+      ],
     },
     {
       name: 'i-CRESS Scraper (Discontinued)',
