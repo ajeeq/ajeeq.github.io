@@ -3,7 +3,7 @@ import type { MainSection } from '@/types/sections/main-section.types';
 import Description from '@/web/components/description.astro';
 // import DownloadButton from '@/web/components/download-button.astro';
 import LinkButton from '@/web/components/link-button.astro';
-import Photo from '@/components/photo.astro';
+// import Photo from '@/components/photo.astro';
 import SectionCard from '@/web/components/section-card.astro';
 import TagsList from '@/web/components/tags-list.astro';
 import Typography from '@/web/components/typography.astro';
@@ -11,19 +11,28 @@ import LabelledValue from '@/web/components/labelled-value.astro';
 
 export interface Props extends MainSection {}
 
-const { config, description, details, fullName, image, links, role, tags } = Astro.props;
+const { 
+  config, 
+  description, 
+  details, 
+  fullName, 
+  // image, 
+  links, 
+  role, 
+  tags 
+} = Astro.props;
 ---
 
 <SectionCard {...config} hideTitle>
   <div class="flex flex-col items-start gap-6 sm:flex-row">
     <div class="flex items-center gap-4 sm:flex-col">
-      <Photo
+      <!-- <Photo
         src={image}
         alt={fullName}
         width={320}
         height={320}
         class="h-24 w-24 max-w-none rounded-lg sm:h-36 sm:w-36 md:h-52 md:w-52"
-      />
+      /> -->
       <!-- <DownloadButton {...action} /> -->
     </div>
     <div class="flex w-full flex-col gap-5">
@@ -35,7 +44,7 @@ const { config, description, details, fullName, image, links, role, tags } = Ast
         {
           links.length > 0 && (
             <div class="flex flex-wrap gap-3 sm:flex-nowrap">
-              {links.map((link) => (
+              {links.map((link: any) => (
                 <LinkButton {...link} />
               ))}
             </div>
@@ -44,7 +53,7 @@ const { config, description, details, fullName, image, links, role, tags } = Ast
       </div>
       <div class="flex flex-col gap-6">
         <div class="inline-grid xl:grid-cols-[auto_auto]">
-          {details.map((detail) => <LabelledValue {...detail} />)}
+          {details.map((detail: any) => <LabelledValue {...detail} />)}
         </div>
         <div class="flex flex-col gap-4">
           <Description content={description} />
